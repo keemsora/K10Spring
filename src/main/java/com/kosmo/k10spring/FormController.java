@@ -103,6 +103,7 @@ public class FormController {
 	파라미터를 마치 경로명처럼 사용하게 되고, 이때 주의해야 할 점은
 	웹브라우저는 요청명을 경로로 인식하므로 리소스를 사용할 때 
 	경로를 주의해야 한다. 또한 파라미터의 갯수가 틀려지면 404에러가 발생된다.
+	--> null값 인식 못함
 	*/
 	@RequestMapping("/form/{memberId}/{memberName}")
 	public String pathVariable(Model model,
