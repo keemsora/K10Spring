@@ -61,8 +61,10 @@ public class DIController {
 	//체질량 지수 계산하기
 	@RequestMapping("/di/myBMICal")
 	public String bmiCal(Model model) {
-		//xml설정파일을 기반으로 스프링 컨테이너 생성
+		
 		String configLoc = "classpath:DIAppCtxBMICal.xml";
+		
+		//xml설정파일을 기반으로 스프링 컨테이너 생성
 		AbstractApplicationContext ctx =
 				new GenericXmlApplicationContext(configLoc);
 		//빈 주입
